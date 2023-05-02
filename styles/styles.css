@@ -1,0 +1,41 @@
+/* styles for the elements */
+:root {
+    --text-color-1: #e85a4f;
+    --text-color-2: #4b4b4b;
+    --text-color-3: #e98074;
+    --accent-color: #d8c3a5;
+}
+body {
+    color: var(--text-color-2);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* styles for the header */
+header img {
+    float: left;
+    margin-right: 1em;
+}
+header {
+    clear: left;
+}
+header p {
+    text-indent: 1em;
+}
+h1, h2, h3 {
+    color: var(--text-color-1);
+    text-shadow: .05em .05em .15em var(--text-color-3);
+}
+
+/* styles for the main content */
+ul>li {
+    color: var(--text-color-1);
+}
+a:hover {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* styles for the footer */
+#copyright {
+    text-align: center;
+}

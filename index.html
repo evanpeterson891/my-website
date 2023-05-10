@@ -8,28 +8,38 @@
   <meta name="Description"
     content="A quick explanation of jazz and a list of Evan's favorite jazz pieces throughout history.">
   <link rel="shortcut icon" href="images/music-note-alt.png">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/newstyles.css">
   <title>Evan's Favorite Jazz Music</title>
 </head>
 
 <body>
   <header>
-    <div class="Title">
-      <img src="images/music-note.png" alt="music note image" height="50em" id="imgleft">
-      <h1>Evan's Favorite Jazz Music Artists &amp; Songs</h1>
-      <img src="images/music-note.png" alt="music note image" height="50em" id="imgright">
+    <h1>Evan's Favorite Jazz Music Artists &amp; Songs</h1>
+  </header>
+  <main>
+    <!-- Navigation Menu Coding -->
+    <div>
+      <nav id="nav_menu">
+        <ul>
+          <li><a href="index.html" class="current">Home Page</a></li>
+          <li><a href="pages/jazz-information.html">Jazz Info</a></li>
+          <li><a href="pages/artists.html" class="lastitem">Artists</a>
+            <ul id="drop-down">
+              <li><a href="people/gerry.html" class="lastitem">Gerry Mulligan</a></li>
+              <li><a href="people/maynard.html" class="lastitem">Maynard Ferguson</a></li>
+              <li><a href="people/stan.html" class="lastitem">Stan Getz</a></li>
+              <li><a href="people/michel.html" class="lastitem">Michel Camilo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <p><a href="pages/jazz-wikipedia.html">Jazz music</a> started in the late 19th century in New Orleans, Louisiana
+    <p id="intro"><span>Jazz</span> music started in the late 19th century in New Orleans, Louisiana
       with roots in blues and ragtime. Jazz is
       typically characterized by swing, blue notes, complex chords, polyrhythms, and improvisation. Evan has been
       playing saxophone for nearly 8 years and found a love for jazz after he took music theory in high school. This
       webpage has a list of a few of Evan's favorite jazz artists and his top 10 favorite jazz songs.</p>
-  </header>
-
-  <main>
-    <!--
-      The following section is an unordered list of favorite artists with their images displayed as well
-    -->
+    <!-- The following section is an unordered list of favorite artists with their images displayed as well -->
     <div class="images-list">
       <h2 class="bodyheader">Favorite Artists</h2>
       <p>The following is a list of a few of Evan's favorite jazz artists.</p>
@@ -37,26 +47,24 @@
         <li>
           <p>Gerry Mulligan</p>
           <img src="images/gerry_mulligan.jpg" alt="Image of Gerry Mulligan sitting with his baritone saxophone"
-            height="180">
+            id="gerry">
         </li>
         <li>
           <p>Maynard Ferguson</p>
-          <img src="images/maynard_ferguson.jpg" alt="Image of Maynard Ferguson playing his trumpet" height="150">
+          <img src="images/maynard_ferguson.jpg" alt="Image of Maynard Ferguson playing his trumpet" id="maynard">
         </li>
         <li>
           <p>Stan Getz</p>
-          <img src="images/stan_getz.jpg" alt="Image of Stan Getz playing his tenor saxophone" height="180">
+          <img src="images/stan_getz.jpg" alt="Image of Stan Getz playing his tenor saxophone" id="stan">
         </li>
         <li>
           <p>Michel Camilo</p>
-          <img src="images/michel_camilo.jpg" alt="Michel Camilo with his piano" height="170">
+          <img src="images/michel_camilo.jpg" alt="Michel Camilo with his piano" id="michel">
         </li>
       </ul>
     </div>
 
-    <!--
-      The following section is an ordered list of favorite songs with links to the songs' youtube video
-    -->
+    <!-- The following section is an ordered list of favorite songs with links to the songs' youtube video -->
     <div class="favorites-list">
       <h2 class="bodyheader">Top 10 Favorite Songs</h2>
       <p>The following is a list of Evan's favorite jazz songs with links to their respective Youtube videos. Although
@@ -101,6 +109,9 @@
       <h3>Words from the author</h3>
       <p>It was very hard to decide on just 10 songs that I liked the most, there are around 100 jazz songs that I love
         listening to but it was fun to make a list like this to share on this webpage!</p>
+    </div>
+    <div class="returntotop">
+      <p><a href="#top">Return to Top</a></p>
     </div>
     <div class="copyright">
       <p><strong>&copy; Evan Peterson 2023</strong></p>

@@ -1,0 +1,277 @@
+/* styles for the elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --text-color-1: #4b4b4b;
+    --text-color-2: #e98074;
+    --border-color: #e04f44;
+    --accent-color: #d8c3a5;
+    --background-color: #eae7dc;
+}
+body {
+    background-color: var(--background-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--text-color-1);
+}
+h1, h2, h3 {
+    color: var(--border-color);
+    text-shadow: .05em .05em .15em var(--text-color-2);
+}
+
+/* styles for the header */
+header h1{
+    width: 100vw;
+    border-bottom: 3px solid var(--border-color);
+    text-align: center;
+    padding: 1.5%;
+    background-color: var(--background-color);
+    background-image: linear-gradient(0deg, var(--text-color-2) 10%, var(--background-color) 25%, var(--background-color) 75%, var(--text-color-2) 90%);
+}
+header {
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* styles for the navigation menu */
+#nav_menu {
+    width: 99.5%;
+    background-color: var(--background-color);
+    border-left: 3px solid var(--border-color);
+    border-right: 3px solid var(--border-color);
+    border-bottom: 3px solid var(--border-color);
+}
+#nav_menu ul {
+    list-style-type: none;
+    position: relative;
+}
+ul#drop-down {
+    padding: 0;
+}
+#nav_menu ul li {
+    float: left;
+    width: 33.33333%;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 5% 0;
+    text-decoration: none;
+    background-color: var(--text-color-2);
+    color: var(--text-color-1);
+    font-weight: bold;
+    border-right: 3px solid var(--border-color);
+}
+#nav_menu ul li a.lastitem { border-right: none;}
+#nav_menu ul li a.current { color: #000000;}
+#nav_menu ul li a#current { color: #000000;}
+#nav_menu ul li a:hover { background-color: #eb9e95;}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+#nav_menu ul ul li {float: none;}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* styles for the main */
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0% auto;
+}
+ul>li {
+    color: var(--border-color);
+}
+.favorites-list a:hover {
+    font-style: italic;
+    font-weight: bold;
+}
+span {
+    color: var(--border-color);      
+}
+#intro {
+    padding: 1%;
+    text-indent: 1em;
+    border-bottom: 3px dashed var(--border-color);
+}
+
+/* styles for favorite artists section */
+.images-list {
+    width: 47.875%;
+    float: left;
+    padding: 1%;
+    height: 100%;
+    min-height: 892px;
+    border-right: 3px dashed var(--border-color);
+}
+.images-list ul {
+    padding-left: 25px;
+}
+.images-list p {
+    padding: 1% 0;
+}
+.images-list h2 {
+    padding-left: 1%;
+}
+img#gerry {
+    width: 100%;
+    max-width: 172.8px;
+    height: 100%;
+    max-height: 180px;
+}
+img#maynard {
+    width: 100%;
+    max-width: 213.38px;
+    height: 100%;
+    max-height: 150px;
+}
+img#stan {
+    width: 100%;
+    max-width: 180px;
+    height: 100%;
+    max-height: 180px;
+}
+img#michel {
+    width: 100%;
+    max-width: 254.94px;
+    height: 100%;
+    max-height: 170px;
+}
+
+/* styles for favorite songs section */
+.favorites-list {
+    width: 47.775%;
+    float: right;
+    padding: 1%;
+    height: 100%;
+    min-height: 892px;
+}
+.favorites-list h2 {
+    padding-left: 1%;
+}
+.favorites-list p {
+    text-indent: 1em;
+}
+.favorites-list ol {
+    padding-left: 25px;
+    /* padding-left: 4.16666%; use this if px not allowed for this */
+}
+.favorites-list ol li {
+    padding: 1% 0%;
+}
+
+/* styles for the jazz information paragraph */
+article {
+    padding: 1%;
+    text-indent: 1em;
+    column-count: 3;
+    column-gap: 4%;
+    column-rule: 3px dashed var(--border-color);
+    font-size: large;
+    border-bottom: 3px dashed var(--border-color);
+}
+
+/* styles for the footer */
+footer {
+    clear: both;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.foot-notes {
+    padding: 1% 1% 0 1%;
+    border-top: 3px dashed var(--border-color);
+}
+.foot-notes h3 {
+    padding-left: 1%;
+}
+.foot-notes p {
+    text-indent: 1em;
+}
+.returntotop {
+    padding: 1%;
+    text-align: right;
+    border-bottom: 3px dashed var(--border-color);
+}
+.returntotop#jazzinfo {
+    text-align: center;
+}
+.returntotop a:link {
+    color: var(--border-color);
+}
+.returntotop a:visited {
+    color: var(--border-color);
+}
+.returntotop a:hover {
+    color: var(--border-color);
+    font-style: italic;
+}
+.copyright {
+    text-align: center;
+    color: #000000;
+    padding: 2% 0;
+}
+
+@media only screen and (max-width: 1060px) {
+    .images-list {
+        width: 98.71698%;
+        float: left;
+        padding: 1%;
+        height: 100%;
+        min-height: 833px;
+        border-right: 0 dashed var(--border-color);
+        border-bottom: 3px dashed var(--border-color);
+    }
+    .favorites-list {
+        width: 98.71698%;
+        float: left;
+        padding: 1%;
+        height: 100%;
+        min-height: 400px;
+    }
+    article {
+        padding: 1%;
+        text-indent: 1em;
+        column-count: 2;
+        column-gap: 4%;
+        column-rule: 3px dashed var(--border-color);
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #nav_menu ul li {
+        float: left;
+        width: 100%;
+    }
+    #nav_menu ul li a {
+        text-align: center;
+        display: block;
+        padding: 4% 0;
+        text-decoration: none;
+        background-color: var(--text-color-2);
+        color: var(--text-color-1);
+        font-weight: bold;
+        border-right: 0 solid var(--border-color);
+        border-bottom: 3px solid var(--border-color);
+    }
+    #nav_menu ul li a.lastitem { border-bottom: none;}
+    article {
+        padding: 1%;
+        text-indent: 1em;
+        column-count: 1;
+        column-gap: 4%;
+        column-rule: 3px dashed var(--border-color);
+        font-size: large;
+    }
+}

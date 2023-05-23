@@ -1,0 +1,95 @@
+h3 {
+    padding: 1% 1% 1% 2%;    
+}
+
+/* Styles for grid layout */
+.artists {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "mull ferg"
+        "getz cami"
+    ;
+    padding: 1% 1% 0 1%;
+}
+
+/* styles for mulligan section */
+div#mulligan {
+    grid-area: mull;
+}
+div#mulligan img {
+    float: left;
+    padding: 1%;
+}
+div#mulligan p {
+    padding: 2%;
+}
+
+/* styles for ferguson section */
+div#ferguson {
+    grid-area: ferg;
+    border-left: 3px dashed var(--border-color);
+}
+div#ferguson img {
+    float: left;
+    padding: 1%;
+}
+div#ferguson p {
+    padding: 2%;
+}
+
+/* styles for getz section */
+div#getz {
+    grid-area: getz;
+}
+div#getz img {
+    float: left;
+    padding: 1%;
+}
+div#getz p {
+    padding: 2%;
+}
+
+/* styles for camilo section */
+div#camilo {
+    grid-area: cami;
+    border-left: 3px dashed var(--border-color);
+}
+div#camilo img {
+    float: left;
+    padding: 1%;
+}
+div#camilo p {
+    padding: 2%;
+}
+
+/* footer styles */
+footer {
+    border-top: 3px dashed var(--border-color);
+}
+div.returntotop {
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .artists {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "mull"
+            "ferg"
+            "getz"
+            "cami"
+        ;
+        row-gap: 0%;
+    }
+    div#ferguson {
+        border-left: none;
+    }
+    div#camilo {
+        border-left: none;
+    }
+    
+}

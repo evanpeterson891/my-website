@@ -12,7 +12,7 @@
 }
 body {
     background-color: var(--background-color);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     color: var(--text-color-1);
 }
 h1, h2, h3 {
@@ -136,9 +136,9 @@ div#artsong {
 }
 img#gerry {
     width: 100%;
-    max-width: 172.8px;
+    max-width: 170px;
     height: 100%;
-    max-height: 180px;
+    max-height: 212.5px;
 }
 img#maynard {
     width: 100%;
@@ -150,7 +150,7 @@ img#stan {
     width: 100%;
     max-width: 180px;
     height: 100%;
-    max-height: 180px;
+    max-height: 253.1px;
 }
 img#michel {
     width: 100%;

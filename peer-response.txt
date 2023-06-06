@@ -1,0 +1,29 @@
+Tiffany Marko:
+
+Love the site! Very nice job!
+
+I really enjoy that your favorite songs have direct youtube links; makes it easy to "vibe" with the site as a whole. 
+
+I enjoyed the history and background information. 
+
+I can really only think of one or two things I would personally change. 
+
+The first is in the "Jazz Info" section. I think it may read better with paragraph breaks. I personally would like a little "pause" area if that makes sense. 
+
+The second is purely a design preference- I think a border or something around the photos on your homepage would add a nice little touch. 
+
+Other than that, thanks for sharing!
+
+--------------------------------------------------------------------
+
+Hassan Sherafatmand:
+
+Evan, I personally enjoyed about your webpage. I can't talk about just one thing because everything is laid out perfectly like navigation, paragraphs, and so on. I think the main color you picked ( pink) makes it unique kind of antic at least to me. Thank you also for amazing content you added to your webpage that is another feature of your website that I liked it the most.  When I visited your article page that you have a photo and a summary about the author, I would suggest give the content a little bit padding and also, I have one question that in your <footer> you used some different<div> tags which I would suggest use <ul> tag it makes it more easier to control them in Css.
+
+(Picture was linked about a html example)
+
+Thank you so much for your hard work.  
+
+--------------------------------------------------------------------
+
+I will be implimenting all of these suggestions -Evan

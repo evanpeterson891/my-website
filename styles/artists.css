@@ -12,6 +12,7 @@ h3 {
         "getz cami"
     ;
     padding: 1% 1% 0 1%;
+    font-size: 110%;
 }
 
 /* styles for mulligan section */
@@ -20,7 +21,7 @@ div#mulligan {
 }
 div#mulligan img {
     float: left;
-    padding: 1%;
+    margin: 1%;
 }
 div#mulligan p {
     padding: 2%;
@@ -33,7 +34,7 @@ div#ferguson {
 }
 div#ferguson img {
     float: left;
-    padding: 1%;
+    margin: 1%;
 }
 div#ferguson p {
     padding: 2%;
@@ -45,7 +46,7 @@ div#getz {
 }
 div#getz img {
     float: left;
-    padding: 1%;
+    margin: 1%;
 }
 div#getz p {
     padding: 2%;
@@ -58,7 +59,7 @@ div#camilo {
 }
 div#camilo img {
     float: left;
-    padding: 1%;
+    margin: 1%;
 }
 div#camilo p {
     padding: 2%;

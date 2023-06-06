@@ -19,6 +19,9 @@ h1, h2, h3 {
     color: var(--border-color);
     text-shadow: .05em .05em .15em var(--text-color-2);
 }
+img {
+    border: 1px solid var(--border-color);
+}
 
 /* styles for the header */
 header {
@@ -189,6 +192,21 @@ article {
     column-rule: 3px dashed var(--border-color);
     font-size: large;
     border-bottom: 3px dashed var(--border-color);
+}
+img#louis {
+    width: 100%;
+    min-width: 100px;
+}
+img#duke {
+    width: 50%;
+    min-width: 100px;
+    float: left;
+    margin-right: .5em;
+}
+img#rythm {
+    float: left;
+    margin-right: .5em;
+    border: none;
 }
 
 /* styles for the footer */

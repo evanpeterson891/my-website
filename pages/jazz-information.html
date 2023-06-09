@@ -11,6 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
     <title>Jazz Information</title>
 </head>
 
@@ -21,6 +29,7 @@
     </header>
     <main>
         <!-- Navigation Menu Coding -->
+        <nav id="mobile_menu"></nav>
         <nav id="nav_menu">
             <ul>
                 <li><a href="../index.html">Home Page</a></li>
@@ -90,9 +99,12 @@
                 The Swing Era: In the 1930s and 1940s, jazz entered the Swing Era. Big bands led by influential
                 musicians such as Duke Ellington, Count Basie, and Benny Goodman became popular. Swing music featured
                 intricate arrangements and encouraged dancing, attracting a broad audience.
-
+                
+                <figure class="fig3">
                 <img src="../images/duke_ellington.jpg" alt="duke ellington playing at the hurricane club" id="duke">
-
+                <figcaption>Duke Ellington at the Hurricane Club</figcaption>
+                </figure>
+                
                 Bebop and Modern Jazz: In the 1940s, a new form of jazz called bebop emerged as a reaction against the
                 commercialization of swing. Bebop emphasized improvisation, complex harmonies, and fast tempos.
                 Musicians like Charlie Parker, Dizzy Gillespie, and Thelonious Monk pushed the boundaries of jazz with
@@ -117,9 +129,12 @@
                 jazz compositions. It was written by saxophonist Paul Desmond and performed by the Dave Brubeck Quartet.
                 The song's distinctive 5/4 time signature, memorable melody, and captivating improvisations have made it
                 a timeless classic.
-                
-                <img src="../images/louis_armstrong.jpg" alt="louis armstrong playing his trumpet" id="louis">
 
+                <figure class="fig4">
+                <img src="../images/louis_armstrong.jpg" alt="louis armstrong playing his trumpet" id="louis">
+                <figcaption>Louis Armstron playing Trumpet</figcaption>
+                </figure>
+                
                 "Summertime" by George Gershwin: Originally composed for the opera "Porgy and Bess" in 1935,
                 "Summertime" has become a jazz standard, with countless interpretations by various artists. The song's
                 soulful melody and melancholic lyrics evoke a sense of longing and beauty. Notable jazz renditions

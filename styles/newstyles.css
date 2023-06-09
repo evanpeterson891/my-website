@@ -94,6 +94,9 @@ ul#drop-down {
     display: block;
     clear: both;
 }
+#mobile_menu {
+    display: none;
+}
 
 /* styles for the main */
 main {
@@ -119,6 +122,9 @@ span {
 div#artsong {
     display: flex;
 }
+figcaption {
+    font-size: 75%;
+}
 
 /* styles for favorite artists section */
 .images-list {
@@ -139,27 +145,37 @@ div#artsong {
 }
 img#gerry {
     width: 100%;
-    max-width: 170px;
+    max-width: 240px;
     height: 100%;
-    max-height: 212.5px;
+    max-height: 282.5px;
 }
 img#maynard {
     width: 100%;
-    max-width: 213.38px;
+    max-width: 263.38px;
     height: 100%;
-    max-height: 150px;
+    max-height: 200px;
 }
 img#stan {
     width: 100%;
-    max-width: 180px;
+    max-width: 200px;
     height: 100%;
-    max-height: 253.1px;
+    max-height: 273.1px;
 }
 img#michel {
     width: 100%;
-    max-width: 254.94px;
+    max-width: 274.94px;
     height: 100%;
-    max-height: 170px;
+    max-height: 190px;
+}
+.fig3 {
+    text-indent: 0;
+}
+.fig3 figcaption {
+    float: left;
+    font-size: 68%;
+}
+.fig4 {
+    text-indent: 0;
 }
 
 /* styles for favorite songs section */
@@ -207,6 +223,67 @@ img#rythm {
     float: left;
     margin-right: .5em;
     border: none;
+}
+
+/* styles for individual artists pages */
+.artist {
+    display: grid;
+    grid-template-columns: 66.666% 33.333%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "gm gm2"
+    ;
+    margin-bottom: .5em;
+}
+#artist2 {
+    grid-area: gm;
+    border-right: 3px dashed var(--border-color);
+}
+figure.fig1 {
+    display: block;
+    float: left;
+    padding: .5em .5em 0 .5em;
+}
+#artist3 {
+    grid-area: gm2;
+}
+img#gerry2 {
+    min-width: 50px;
+    width: 100%;
+    max-width: 240px;
+}
+figure.fig2 {
+    display: block;
+    float: right;
+    padding: .5em;
+}
+.artist p {
+    margin: 0 .5em;
+}
+.artist h1 {
+    padding: .2em;
+    text-align: center;
+}
+table {
+    margin: 0 auto;
+    margin-top: .5em;
+    border-collapse: collapse;
+    border: 2px solid var(--border-color)
+}
+th, td {
+    padding: .2em;
+    border: 1px solid var(--border-color)
+}
+td.center {
+    text-align: center;
+}
+td.right {
+    text-align: right;
+    padding-left: 2em;
+}
+td.first, th.first {
+    background-color: var(--text-color-2);
+    color: #000000;
 }
 
 /* styles for the footer */
@@ -280,10 +357,27 @@ footer {
         column-rule: 3px dashed var(--border-color);
         font-size: large;
     }
+    .artist {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "gm"
+            "gm2"
+        ;
+        margin-bottom: .5em;
+    }
+    #artist2 {
+        border-right: none;
+        border-bottom: 3px dashed var(--border-color);
+    }
+    #artist3 p {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    #nav_menu ul {
+    /* #nav_menu ul {
         display: flex;
         flex-direction: column;
     }
@@ -303,7 +397,16 @@ footer {
     #nav_menu ul ul {
         width: 100%;
     }
-    #nav_menu ul li a.lastitem { border-bottom: none;}
+    #nav_menu ul li a.lastitem { border-bottom: none;} */
+    #nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: var(--text-color-2) !important;
+	}
     article {
         padding: 1%;
         text-indent: 1em;
@@ -311,5 +414,18 @@ footer {
         column-gap: 4%;
         column-rule: 3px dashed var(--border-color);
         font-size: large;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    figure { 
+        float: none;
+        width: 95%;
+    }
+    img#gerry {
+        width: 100%;
+    }
+    img#gerry2 {
+        width: 100%;
     }
 }

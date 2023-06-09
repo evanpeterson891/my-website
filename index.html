@@ -13,6 +13,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/slicknav.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+    });
+  </script>
   <title>Evan's Favorite Jazz Music</title>
 </head>
 
@@ -24,6 +32,7 @@
   </header>
   <main>
     <!-- Navigation Menu Coding -->
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
       <ul>
         <li><a href="index.html" class="current">Home Page</a></li>

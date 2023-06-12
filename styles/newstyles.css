@@ -10,7 +10,11 @@
     --accent-color: #d8c3a5;
     --background-color: #eae7dc;
 }
+html, body {
+    width: 100vw;
+}
 body {
+    overflow-x: hidden;
     background-color: var(--background-color);
     font-family: 'Rajdhani', sans-serif;
     color: var(--text-color-1);
@@ -26,13 +30,12 @@ img {
 /* styles for the header */
 header {
     width: 100%;
-    max-width: 1200px;
 }
 header h1{
     width: 100vw;
     border-bottom: 3px solid var(--border-color);
     text-align: center;
-    padding: 1.5%;
+    padding: 1.5% 0;
     background-color: var(--background-color);
     background-image: linear-gradient(0deg, var(--text-color-2) 10%, var(--background-color) 25%, var(--background-color) 75%, var(--text-color-2) 90%);
 }
@@ -146,33 +149,31 @@ figcaption {
 img#gerry {
     width: 100%;
     max-width: 240px;
-    height: 100%;
+    height: auto;
     max-height: 282.5px;
 }
 img#maynard {
     width: 100%;
     max-width: 263.38px;
-    height: 100%;
+    height: auto;
     max-height: 200px;
 }
 img#stan {
     width: 100%;
     max-width: 200px;
-    height: 100%;
+    height: auto;
     max-height: 273.1px;
 }
 img#michel {
     width: 100%;
     max-width: 274.94px;
-    height: 100%;
+    height: auto;
     max-height: 190px;
 }
 .fig3 {
-    text-indent: 0;
-}
-.fig3 figcaption {
     float: left;
-    font-size: 68%;
+    width: 100%;
+    text-indent: 0;
 }
 .fig4 {
     text-indent: 0;
@@ -214,7 +215,7 @@ img#louis {
     min-width: 100px;
 }
 img#duke {
-    width: 50%;
+    width: 100%;
     min-width: 100px;
     float: left;
     margin-right: .5em;
@@ -305,11 +306,8 @@ footer {
 }
 .returntotop {
     padding: 1%;
-    text-align: right;
-    border-bottom: 3px dashed var(--border-color);
-}
-.returntotop#jazzinfo {
     text-align: center;
+    border-bottom: 3px dashed var(--border-color);
 }
 .returntotop a:link {
     color: var(--border-color);
@@ -325,6 +323,12 @@ footer {
     text-align: center;
     color: #000000;
     padding: 2% 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    article {
+        column-count: 2;
+    }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -349,14 +353,6 @@ footer {
         height: 100%;
         min-height: 400px;
     }
-    article {
-        padding: 1%;
-        text-indent: 1em;
-        column-count: 2;
-        column-gap: 4%;
-        column-rule: 3px dashed var(--border-color);
-        font-size: large;
-    }
     .artist {
         display: grid;
         grid-template-columns: auto;
@@ -375,29 +371,18 @@ footer {
         text-align: center;
     }
 }
+@media only screen and (max-width: 780px) {
+    article {
+        padding: 1%;
+        text-indent: 1em;
+        column-count: 1;
+        column-gap: 4%;
+        column-rule: 3px dashed var(--border-color);
+        font-size: large;
+    }
+}
 
 @media only screen and (max-width: 600px) {
-    /* #nav_menu ul {
-        display: flex;
-        flex-direction: column;
-    }
-    #nav_menu ul li {
-        flex-basis: 100%;
-    }
-    #nav_menu ul li a {
-        text-align: center;
-        padding: 4% 0;
-        text-decoration: none;
-        background-color: var(--text-color-2);
-        color: var(--text-color-1);
-        font-weight: bold;
-        border-right: 0 solid var(--border-color);
-        border-bottom: 3px solid var(--border-color);
-    }
-    #nav_menu ul ul {
-        width: 100%;
-    }
-    #nav_menu ul li a.lastitem { border-bottom: none;} */
     #nav_menu {
 		display: none;
 	}

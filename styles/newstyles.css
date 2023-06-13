@@ -100,6 +100,9 @@ ul#drop-down {
 #mobile_menu {
     display: none;
 }
+#mobileartists {
+    display: none;
+}
 
 /* styles for the main */
 main {
@@ -400,6 +403,9 @@ footer {
         column-rule: 3px dashed var(--border-color);
         font-size: large;
     }
+    #mobileartists {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -409,8 +415,32 @@ footer {
     }
     img#gerry {
         width: 100%;
+        max-width: none;
+        max-height: none;
+        height: auto;
     }
     img#gerry2 {
         width: 100%;
+        max-width: none;
+        max-height: none;
+        height: auto;
+    }
+    img#maynard {
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        height: auto;
+    }
+    img#stan {
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        height: auto;
+    }
+    img#michel {
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        height: auto;
     }
 }

@@ -18,6 +18,7 @@ body {
     background-color: var(--background-color);
     font-family: 'Rajdhani', sans-serif;
     color: var(--text-color-1);
+    font-size: large;
 }
 h1, h2, h3 {
     color: var(--border-color);
@@ -272,7 +273,8 @@ table {
     margin: 0 auto;
     margin-top: .5em;
     border-collapse: collapse;
-    border: 2px solid var(--border-color)
+    border: 2px solid var(--border-color);
+    width: 90%;
 }
 th, td {
     padding: .2em;
@@ -285,10 +287,19 @@ td.right {
     text-align: right;
     padding-left: 2em;
 }
-td.first, th.first {
+td.top, th.top {
     background-color: var(--text-color-2);
     color: #000000;
 }
+td.first {
+    background-color: var(--text-color-2);
+    color: #000000;
+    width: 10%;
+}
+td.last {
+    width: 15%;
+}
+
 
 /* styles for the footer */
 footer {
@@ -372,6 +383,20 @@ footer {
     }
     #artist3 p {
         text-align: center;
+    }
+    table {
+        width: 80%;
+    }
+    td.right {
+        text-align: center;
+        padding: 0.2em;
+        width: 40%;
+    }
+    td.first {
+        width: 1%;
+    }
+    td.last {
+        width: 3%;
     }
 }
 @media only screen and (max-width: 780px) {

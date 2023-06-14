@@ -1,3 +1,5 @@
+/* Styles for header */
+
 h3 {
     padding: 1% 1% 1% 2%;    
 }
@@ -12,7 +14,6 @@ h3 {
         "getz cami"
     ;
     padding: 1% 1% 0 1%;
-    font-size: 110%;
 }
 
 /* styles for mulligan section */

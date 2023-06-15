@@ -70,9 +70,15 @@ ul#drop-down {
     font-weight: bold;
     border-right: 3px solid var(--border-color);
 }
-#nav_menu ul li a.lastitem { border-right: none;}
-#nav_menu ul li a.current { color: #000000;}
-#nav_menu ul li a#current { color: #000000;}
+#nav_menu ul li a.lastitem { 
+    border-right: none;
+}
+#nav_menu ul li a.current { 
+    color: #000000;
+}
+#nav_menu ul li a#current { 
+    color: #000000;
+}
 #nav_menu ul li a:hover { 
     background-color: #eb9e95;
     flex-basis: 100%;
